@@ -54,11 +54,11 @@
   }
 
   &__link--adress:before {
-    background-image: url('../images/adress.svg');
+    background-image: url('../images/icons/adress.svg');
   }
 
   &__link--tel:before {
-    background-image: url('../images/tel.svg');
+    background-image: url('../images/icons/tel.svg');
   }
 
   &__bottom {
@@ -165,14 +165,14 @@
   }
 
   &__label {
-    background-image: url('../images/icon-search.svg');
+    background-image: url('../images/icons/icon-search.svg');
     width: 20px;
     height: 20px;
     @extend %background;
     background-position: right center;
     padding-left: 30px;
   }
-  
+
   &__input {
     padding: 15px 200px 15px 18px;
     width: 100%;
@@ -222,11 +222,11 @@
   }
 
   &__link--user {
-    background-image: url('../images/icon-user.svg');
+    background-image: url('../images/icons/icon-user.svg');
   }
 
   &__link--heart {
-    background-image: url('../images/icon-heart.svg');
+    background-image: url('../images/icons/icon-heart.svg');
   }
 
   &__link--cart {
@@ -336,15 +336,15 @@
   }
 
   &__item--scooter {
-    background-image: url('../images/scooter.svg');
+    background-image: url('../images/icons/scooter.svg');
   }
 
   &__item--return {
-    background-image: url('../images/return-box.svg');
+    background-image: url('../images/icons/return-box.svg');
   }
 
   &__item--support {
-    background-image: url('../images/24-hours.svg');
+    background-image: url('../images/icons/24-hours.svg');
   }
 
   &__item:not(:last-child) {
@@ -484,7 +484,7 @@
     font-size: 0;
     width: 32px;
     height: 29px;
-    background-image: url('../images/icons/icon-heart.svg');
+    background-image: url('../images/icons/gray-heart.svg');
     transition: background-image 0.3s;
   }
 
@@ -597,19 +597,19 @@
   }
 
   &__link--facebook {
-    background-image: url('../images/facebook.svg');
+    background-image: url('../images/icons/facebook.svg');
   }
 
   &__link--youtube {
-    background-image: url('../images/youtube.svg');
+    background-image: url('../images/icons/youtube.svg');
   }
 
   &__link--telegram {
-    background-image: url('../images/telegram.svg');
+    background-image: url('../images/icons/telegram.svg');
   }
 
   &__link--instagram {
-    background-image: url('../images/instagram.svg');
+    background-image: url('../images/icons/instagram.svg');
   }
 }
 
@@ -702,13 +702,13 @@
   &__item--visa {
     width: 93px;
     height: 23px;
-    background-image: url('../images/visa.svg');
+    background-image: url('../images/icons/visa.svg');
   }
 
   &__item--mastercard {
     width: 49px;
     height: 29px;
-    background-image: url('../images/mastercard.svg');
+    background-image: url('../images/icons/mastercard.svg');
   }
 
   &__item:not(:last-child) {
