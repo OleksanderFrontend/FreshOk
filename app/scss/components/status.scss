@@ -1,0 +1,26 @@
+.status {
+  &__item {
+    display: table;
+    padding: 3px 6px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: $green-900;
+    border-radius: 6px;
+
+    &--new {
+      margin-bottom: 6px;
+    }
+
+    &--discount {
+      background-color: $red-900;
+    }
+
+    &--hit {
+      background-color: $hit-color;
+    }
+  }
+}

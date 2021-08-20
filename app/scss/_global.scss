@@ -8,21 +8,12 @@ body {
   line-height: 1.4;
   color: $dark-500;
   background-color: $white;
-  @extend %lato-700;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
 }
 
-button {
-  background-color: transparent;
-  padding: 0;
-} 
-
-button,
-input {
-  border: none;
-  outline: transparent;
-}
 
 .main {
   flex-grow: 1;
@@ -34,9 +25,13 @@ input {
   padding: 0 15px;
 }
 
+.section {
+  padding: 72px 0;;
+}
+
 .title {
-  margin-bottom: 30px;
-  @extend %signika-600;
+  font-family: $signika;
+  font-weight: 600;
   font-size: 32px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -56,7 +51,3 @@ input {
   overflow: hidden;
 }
 
-.tab--active {
-  padding-bottom: 3px;
-  border-bottom: 3px solid $green-200;
-}

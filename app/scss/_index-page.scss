@@ -1,0 +1,35 @@
+@import './index-page/sale';
+@import './index-page/top-products';
+@import './index-page/banners';
+@import './index-page/brands';
+@import './index-page/news';
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+
+  &__item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &__btn {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $dark-500;
+
+    &:hover,
+    &:active {
+      border-bottom: 3px solid $filter-hover;
+    }
+  }
+
+  .mixitup-control-active {
+    border-bottom: 3px solid $filter-hover;
+  }
+}

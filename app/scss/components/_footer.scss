@@ -1,0 +1,163 @@
+.footer {
+  padding-top: 30px;
+  color: $white;
+  background-color: $dark-800;
+
+  &__top {
+    border-bottom: 1px solid $footer-line;
+    padding-bottom: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 84px;
+  }
+
+  &__link {
+    display: block;
+    transition: opacity 0.3s, color 0.3s;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      color: rgba(71, 120, 217, 0.7);
+    }
+  }
+
+  &__hotline,
+  &__adress {
+    margin-bottom: 18px;
+    display: block;
+
+    transition: opacity 0.3s,
+      color 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      color: rgba(71, 120, 217, 0.7);
+    }
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  &__pic {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: opacity 0.3s;
+  }
+
+  &__pic:hover,
+  &__pic:active {
+    opacity: 0.7;
+  }
+
+  &__pic--facebook {
+    background-image: url('../images/icons/facebook.svg');
+  }
+
+  &__pic--youtube {
+    background-image: url('../images/icons/youtube.svg');
+  }
+
+  &__pic--telegram {
+    background-image: url('../images/icons/telegram.svg');
+  }
+
+  &__pic--instagram {
+    background-image: url('../images/icons/instagram.svg');
+  }
+
+  &__bottom {
+    padding: 28px 0;
+    text-transform: uppercase;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__card {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    &--visa {
+      width: 93px;
+      height: 29px;
+      background-image: url('../images/icons/visa.svg');
+    }
+
+    &--mastercard {
+      width: 49px;
+      height: 29px;
+      background-image: url('../images/icons/mastercard.svg');
+    }
+  }
+}
+
+.subscribe-form {
+  line-height: 14px;
+  max-width: 300px;
+
+  &__item {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  &__input {
+    padding: 12px;
+    max-width: 182px;
+    width: 100%;
+    border-radius: 6px 0px 0px 6px;
+
+    &:focus {
+      outline: 1px solid orange;
+    }
+
+  }
+}

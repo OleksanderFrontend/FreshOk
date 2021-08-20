@@ -1,0 +1,124 @@
+.product-card {
+  position: relative;
+  border: 1px solid $cards-color;
+  border-radius: 6px;
+  background-color: $white;
+  transition: border 0.3s;
+  padding: 12px 0;
+  height: 419px;
+
+  &:hover {
+    border: 1px solid $green-900;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-bottom: 6px;
+    height: 38px;
+  }
+
+
+  &__favorite {
+    position: absolute;
+    top: 17px;
+    right: 12px;
+    width: 32px;
+    height: 29px;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+
+    path {
+      transition: fill 0.3s;
+      fill: $silver-600;
+    }
+
+    &:hover {
+      path {
+        fill: $yellow-900;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 18px;
+    height: 101px;
+  }
+
+  &__name {
+    transition: opacity 0.3s, color 0.3s;
+    margin-bottom: 9px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      outline: 0;
+      color: rgba(71, 120, 217, 0.7);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__price {
+    line-height: 1;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &--old {
+      display: block;
+      color: $silver-600;
+      position: relative;
+      margin-bottom: 3px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 96%;
+        height: 59%;
+        border-bottom: 1px solid $silver-600;
+        transform: rotate(-15deg);
+      }
+    }
+  }
+
+  &__basket {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: $green-900;
+
+    &:hover {
+      background-color: $dark-green;
+    }
+
+    &:active {
+      box-shadow: inset 0px 4px 4px $silver-btn;
+      color: $btn-text;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 4px $green-200;
+    }
+  }
+}
