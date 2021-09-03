@@ -12,7 +12,6 @@
   }
 
   &__item {
-    // max-width: 275px;
     padding-left: 74px;
     background-repeat: no-repeat;
     background-size: 50px 50px;
@@ -34,8 +33,6 @@
     }
   }
 
-
-
   &__title {
     display: inline-block;
     max-width: 275px;
@@ -46,5 +43,10 @@
     overflow: hidden;
     white-space: nowrap;
     color: $dark-900;
+  }
+
+  &__text {
+    @include text-clamp;
+    max-width: 201px;
   }
 }

@@ -21,24 +21,32 @@ $btn-text: rgba(255, 255, 255, 0.5);
 $btn-color: rgba(99, 166, 14, 0.5);
 $filter-hover: rgba(99, 166, 14, 0.2);
 $silver-hover: rgba(49, 53, 43, 0.85);
+$focus-link: rgba(71, 120, 217, 0.7);
+
 
 $signika: 'Signika',
 sans-serif;
 
-@mixin text-clamp($lines: 3, $line-height: false) {
+@mixin title-clamp($lines: 3, $line-height: false) {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $lines;
+
+  @if $line-height {
+    max-height: $line-height * $lines * 1px;
+  }
+}
+
+@mixin text-clamp($lines: 6, $line-height: false) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+
   @if $line-height {
     max-height: $line-height * $lines * 1px;
   }
 }
 
 
-%badges-font {
-  font-size: 10px;
-  line-height: 1;
-  letter-spacing: 0.03em;
-  color: $white;
-}

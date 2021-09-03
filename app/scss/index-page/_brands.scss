@@ -5,6 +5,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    opacity: 0.5;
+    transition: opacity 0.3s;
 
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

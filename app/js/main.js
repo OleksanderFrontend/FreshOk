@@ -8,7 +8,7 @@ $(function () {
   });
 
   // $('.brands__items').slick({
-  //   slidesToShow: 6
+  //   slidesToShow: 2
   // });
 
   // var mixer = mixitup('.top-products__сards');

@@ -27,9 +27,22 @@
     top: 10px;
   }
 
-  &__name {
+  &__title {
     margin-bottom: 6px;
     max-width: 164px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: $dark-900;
+    @include title-clamp;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: $dark-900;
+    @include title-clamp;
   }
 
   &__bottom {

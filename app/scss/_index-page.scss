@@ -22,9 +22,10 @@
     text-transform: uppercase;
     font-weight: 700;
     color: $dark-500;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s;
 
-    &:hover,
-    &:active {
+    &:hover {
       border-bottom: 3px solid $filter-hover;
     }
   }
