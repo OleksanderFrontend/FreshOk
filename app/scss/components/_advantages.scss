@@ -17,15 +17,15 @@
     background-size: 50px 50px;
 
     &--scooter {
-      background-image: url('../images/icons/scooter.svg');
+      background-image: url('../images/content/icons/scooter.svg');
     }
 
     &--return {
-      background-image: url('../images/icons/return-box.svg');
+      background-image: url('../images/content/icons/return-box.svg');
     }
 
     &--support {
-      background-image: url('../images/icons/24-hours.svg');
+      background-image: url('../images/content/icons/24-hours.svg');
     }
 
     &:not(:last-child) {
